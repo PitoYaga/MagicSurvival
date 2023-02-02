@@ -11,13 +11,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/XPHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/XPHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/XpCyristals.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/XPHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SkillLevelHandler.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2L8Mzjl9tRGpvw3vrMVTRe57OPx" />
@@ -65,6 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675248526298</updated>
       <workItem from="1675248536676" duration="2578000" />
+      <workItem from="1675345727034" duration="2840000" />
     </task>
     <servers />
   </component>
