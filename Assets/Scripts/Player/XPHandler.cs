@@ -24,6 +24,7 @@ namespace Player
     
         void Update()
         {
+            _currentXp = ValueBank.currentXp;
             LevelCalculator();
         }
 

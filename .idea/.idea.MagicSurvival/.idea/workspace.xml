@@ -12,6 +12,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/BasicShotGun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/XPHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -19,8 +21,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Collectables/XpCyristals.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/XPHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SkillLevelHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/XPHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ValueBank.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/BasicShotGun.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2L8Mzjl9tRGpvw3vrMVTRe57OPx" />
@@ -69,6 +74,7 @@
       <updated>1675248526298</updated>
       <workItem from="1675248536676" duration="2578000" />
       <workItem from="1675345727034" duration="2840000" />
+      <workItem from="1675429326125" duration="5521000" />
     </task>
     <servers />
   </component>

@@ -6,7 +6,7 @@ public class Constants : MonoBehaviour
 {
     public static string playerTag = "Player";
     
-    public static string smallCyristalTag = "SmallCtristal";
+    public static string smallCyristalTag = "SmallCyristal";
     public static string midCyristalTag = "MidCyristal";
     public static string bigCyristalTag = "BigCyristal";
 
