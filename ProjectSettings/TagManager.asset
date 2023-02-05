@@ -7,6 +7,8 @@ TagManager:
   - SmallCyristal
   - MidCyristal
   - BigCyristal
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX

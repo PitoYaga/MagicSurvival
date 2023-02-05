@@ -15,11 +15,12 @@ namespace Player
 
         void Start()
         {
-            _shootPos = new Vector2(transform.position.x, transform.position.y + shootOffset);
+            
         }
     
         void Update()
         {
+            _shootPos = new Vector2(transform.position.x, transform.position.y + shootOffset);
             BasicShoot();
         }
 
@@ -32,6 +33,11 @@ namespace Player
                 GameObject bulletCopy = Instantiate(bullet, _shootPos, Quaternion.identity);
                 _timer = 0;
             }
+        }
+
+        void Distance()
+        {
+            Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, shootRange);
         }
     }
 }

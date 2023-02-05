@@ -6,6 +6,8 @@ public class ValueBank : MonoBehaviour
 {
     public static int currentXp = 0; //if enemy dies, this value will increase
     
+    public static float bulletDamage = 5; //if enemy dies, this value will increase
+    
     public static int basicShootLevel = 1;
     public static int movementLevel = 1;
     public static int healthLevel = 1;

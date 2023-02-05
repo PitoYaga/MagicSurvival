@@ -19,8 +19,7 @@ public class PlayerBullet : MonoBehaviour
         _rigidbody2D.AddForce(Vector2.up * (speed * Time.deltaTime));
         Destroy(gameObject, 2);
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         
