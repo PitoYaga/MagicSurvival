@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
 
     public void LevelScene()
     {
-        SceneManager.LoadScene("LevelScene");
+        SceneManager.LoadScene("GameLevels");
     }
 
     public void Credits()
@@ -39,5 +39,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+ 
     
 }
