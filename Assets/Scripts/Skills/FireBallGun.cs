@@ -31,7 +31,7 @@ namespace Skills
             _shootPos = new Vector2(transform.position.x, transform.position.y + shootOffset);
 
             BasicShoot();
-            UpgradeHandler();
+            UpgradeHandler(); 
         }
 
         void BasicShoot()

@@ -15,7 +15,7 @@ namespace Player
 
         void Start()
         {
-            _rigidbody2D.AddForce(Vector2.up * (speed * Time.deltaTime));
+            _rigidbody2D.AddForce(transform.up * speed * Time.deltaTime);
             Destroy(gameObject, 2);
         }
     

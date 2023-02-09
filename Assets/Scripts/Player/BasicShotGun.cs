@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Player
@@ -31,12 +32,10 @@ namespace Player
 
             if (_timer >= shootInterval)
             {
-                GameObject bulletCopy = Instantiate(bullet, _shootPos, Quaternion.identity);
+                GameObject bulletCopy = Instantiate(bullet, _shootPos, Quaternion.Euler(0, 0, transform.rotation.x));
                 _timer = 0;
             }
         }
-
-        //shoot nearest enemy
 
         void FindClosestEnemy()
         {
@@ -45,17 +44,17 @@ namespace Player
             GameObject[] allEnemies = GameObject.FindGameObjectsWithTag(Constants.enemyTag);
             foreach (GameObject currentEnemy in allEnemies)
             {
-                float distanceToEnemy = (currentEnemy.transform.position - this.transform.position).sqrMagnitude;
+                float distanceToEnemy = (currentEnemy.transform.position - transform.position).sqrMagnitude;
                 if (distanceToEnemy < distanceToClosestEnemy)
                 {
                     distanceToClosestEnemy = distanceToEnemy;
                     closestEnemy = currentEnemy;
-                
                 }
-                transform.LookAt(closestEnemy.transform.position);
-            }
 
+                if (closestEnemy is not null) transform.LookAt(closestEnemy.transform);
+            }
         }
+       
     }
 }
         

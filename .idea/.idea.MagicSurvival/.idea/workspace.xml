@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/DetectNearestEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/BasicShotGun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Skills/SkillUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/XpHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -28,15 +29,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/XpHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillUpgrade.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/Constants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/ValueBank.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/BasicShotGun.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallBullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallGun.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BasicEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallBullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallGun.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/DetectNearestEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/BasicShotGun.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBullet.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2L8Mzjl9tRGpvw3vrMVTRe57OPx" />
@@ -88,7 +90,8 @@
       <workItem from="1675429326125" duration="5521000" />
       <workItem from="1675599677529" duration="4159000" />
       <workItem from="1675675329245" duration="2114000" />
-      <workItem from="1675934901416" duration="5251000" />
+      <workItem from="1675934901416" duration="6622000" />
+      <workItem from="1675945483061" duration="3827000" />
     </task>
     <servers />
   </component>
