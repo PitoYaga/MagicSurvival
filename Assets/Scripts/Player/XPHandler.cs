@@ -1,3 +1,4 @@
+using Game;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,7 +25,7 @@ namespace Player
     
         void Update()
         {
-            ValueBank.currentXp = _currentXp;
+            ValueBank.CurrentXp = _currentXp;
             LevelCalculator();
         }
 
@@ -42,7 +43,6 @@ namespace Player
                 
                 _levelUp = true;
             }
-            Debug.Log(_currentXp);
         }
 
         void CollectPoints(int cyristalValue)

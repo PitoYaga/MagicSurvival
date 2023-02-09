@@ -35,9 +35,6 @@ namespace Player
             }
         }
 
-        void Distance()
-        {
-            Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, shootRange);
-        }
+        //shoot nearest enemy
     }
 }
