@@ -917,12 +917,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 271f29c1086ec7243a9bc71b38415dee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxXp: 100
-  xPMultiply: 15
-  smallCyristal: 10
-  midCyristal: 15
-  bigCyristal: 20
-  xPSlider: {fileID: 490619182}
 --- !u!4 &1335227592 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9217409857223601597, guid: 8865332436a925f4b8e463c0162134bc, type: 3}
@@ -1569,6 +1563,10 @@ PrefabInstance:
     - target: {fileID: 6466195322296023148, guid: 41888cf9b52f31e4d823bee4ead65d77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466195322296023150, guid: 41888cf9b52f31e4d823bee4ead65d77, type: 3}
+      propertyPath: enemyHeath
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41888cf9b52f31e4d823bee4ead65d77, type: 3}
