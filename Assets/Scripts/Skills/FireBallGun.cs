@@ -12,7 +12,7 @@ namespace Skills
         [SerializeField] private float shootOffset = 0.6f;
         [SerializeField] private float shootRange = 10;
 
-        private Vector2 _shootPos;
+        GameObject _barrelPos;
         private float _timer;
         private int _damage;
         private int _fireBallLevel;
@@ -21,26 +21,27 @@ namespace Skills
 
         void Start()
         {
-            _player = GameObject.FindWithTag(Constants.playerTag);
+            _player = GameObject.FindWithTag(Constants.playerGunTag);
+            _barrelPos = GameObject.FindWithTag(Constants.barrelTag);
+            
             transform.SetParent(_player.transform); // delete this later, after the level up canvas
         }
     
         void Update()
         {
             _damage = ValueBank.fireBallDamage;
-            _shootPos = new Vector2(transform.position.x, transform.position.y + shootOffset);
 
-            BasicShoot();
+            FireBallShoot();
             UpgradeHandler(); 
         }
 
-        void BasicShoot()
+        void FireBallShoot()
         {
             _timer += Time.deltaTime;
         
             if (_timer >= shootInterval)
             {
-                GameObject fireBallCopy = Instantiate(fireBallBullet, _shootPos, Quaternion.identity);
+                GameObject fireBallCopy = Instantiate(fireBallBullet, _barrelPos.transform.position, transform.rotation);
                 _timer = 0;
             }
         }

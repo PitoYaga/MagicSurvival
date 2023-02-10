@@ -16,7 +16,7 @@ namespace Skills
 
         void Start()
         {
-            _rigidbody2D.AddForce(Vector2.up * (fireBallSpeed * Time.deltaTime));
+            _rigidbody2D.AddForce(transform.up * (fireBallSpeed * Time.deltaTime));
             //anim
             Destroy(gameObject, 2);
         }

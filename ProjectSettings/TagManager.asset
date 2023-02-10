@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Bullet
   - FireBall
+  - PlayerGuns
+  - Barrel
   layers:
   - Default
   - TransparentFX
