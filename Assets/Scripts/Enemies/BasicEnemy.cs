@@ -58,7 +58,11 @@ namespace Enemies
             }
             if (other.gameObject.CompareTag(Constants.fireBallTag))
             {
-                GetDamage(ValueBank.fireBallDamage);
+                GetDamage(ValueBank.FireBallDamage);
+            }
+            if (other.gameObject.CompareTag(Constants.thunderTag))
+            {
+                GetDamage(ValueBank.ThunderDamage);
             }
         }
     }

@@ -12,6 +12,7 @@ TagManager:
   - FireBall
   - PlayerGuns
   - Barrel
+  - Thunder
   layers:
   - Default
   - TransparentFX

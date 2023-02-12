@@ -22,8 +22,8 @@ namespace Game
         public static int shieldLevel = 1;
         public static int thunderLevel = 1;
         
-        public static int laserDamage = 10;
-        public static int fireBallDamage = 10;
-        public static int thunderDamage = 10;
+        public static float laserDamage = 10;
+        public static float FireBallDamage = 10;
+        public static float ThunderDamage = 15;
     }
 }

@@ -3,52 +3,47 @@ using UnityEngine;
 
 namespace Skills
 {
-    public class FireBallGun : MonoBehaviour
+    public class ThunderBase : MonoBehaviour
     {
-        [SerializeField] private GameObject fireBallBullet;
+        [SerializeField] private GameObject thunder;
+        [SerializeField] private float shootInterval = 2f;
         [SerializeField] private int damageMultiply = 15;
         [SerializeField] private int fireSpeedMultiply = 10;
-        [SerializeField] private float shootInterval = 1.2f;
-        [SerializeField] private float shootOffset = 0.6f;
-        [SerializeField] private float shootRange = 10;
-
-        GameObject _barrelPos;
+        
         private float _timer;
         private float _damage;
         private int _fireBallLevel;
+        float x;
+        float y;
         private GameObject _player;
-
-
+        
         void Start()
         {
             _player = GameObject.FindWithTag(Constants.playerGunTag);
-            _barrelPos = GameObject.FindWithTag(Constants.barrelTag);
-            
+
             transform.SetParent(_player.transform); // delete this later, after the level up canvas
         }
-    
+        
         void Update()
         {
-            _damage = ValueBank.FireBallDamage;
-
-            FireBallShoot();
-            FireBallUpgrade(); 
+            ThunderRain();
+            ThunderUpgrade();
         }
 
-        void FireBallShoot()
+        void ThunderRain()
         {
             _timer += Time.deltaTime;
-        
+
             if (_timer >= shootInterval)
             {
-                GameObject fireBallCopy = Instantiate(fireBallBullet, _barrelPos.transform.position, transform.rotation);
                 _timer = 0;
+                x = Random.Range (-2.6f, 2.6f);
+                y = Random.Range (-4.8f, 4.8f);
+                GameObject thunderCopy = Instantiate(thunder, new Vector3(x, y, 0), Quaternion.identity);
             }
         }
 
-        //shoot nearest enemy
-
-        void FireBallUpgrade()
+        void ThunderUpgrade()
         {
             if (ValueBank.fireBallLevel != _fireBallLevel)
             {

@@ -12,6 +12,7 @@ public class Constants : MonoBehaviour
     public static string bigCyristalTag = "BigCyristal";
     
     public static string fireBallTag = "FireBall";
+    public static string thunderTag = "Thunder";
     
     public static string enemyTag = "Enemy";
     

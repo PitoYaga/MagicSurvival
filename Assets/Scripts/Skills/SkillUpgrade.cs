@@ -24,5 +24,10 @@ namespace Skills
         {
             ValueBank.fireBallLevel++;
         }
+
+        public void ThunderUpgrade()
+        {
+            ValueBank.thunderLevel++;
+        }
     }
 }
