@@ -55,15 +55,21 @@ namespace Enemies
             {
                 Destroy(other.gameObject);
                 GetDamage(ValueBank.bulletDamage);
+                Debug.Log("shoot");
             }
             if (other.gameObject.CompareTag(Constants.fireBallTag))
             {
                 GetDamage(ValueBank.FireBallDamage);
+                Debug.Log("fireball");
             }
             if (other.gameObject.CompareTag(Constants.thunderTag))
             {
                 GetDamage(ValueBank.ThunderDamage);
+                Debug.Log("thunder");
             }
+            
+            Debug.Log(enemyHeath);
+
         }
     }
 }
