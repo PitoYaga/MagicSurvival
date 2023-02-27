@@ -1,4 +1,5 @@
 using Game;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,13 +13,14 @@ namespace Player
         [SerializeField] private int midCyristal = 15;
         [SerializeField] private int bigCyristal = 20;
         [SerializeField] private Slider xPSlider;
+        [SerializeField] private GameObject levelUpCanvas;
         
         private int _level = 1;
         private int _currentXp;
-        private bool _levelUp;
     
         void Start()
         {
+            levelUpCanvas.SetActive(false);
             xPSlider.maxValue = maxXp;
         }
 
@@ -41,8 +43,14 @@ namespace Player
                 maxXp = ((maxXp / 100) * xPMultiply) + maxXp;
                 xPSlider.maxValue = maxXp;
                 
-                _levelUp = true;
+                //LevelUp();
             }
+        }
+
+        void LevelUp()
+        {
+            Instantiate(levelUpCanvas, transform.position, quaternion.identity);
+            Time.timeScale = 0;
         }
 
         void CollectPoints(int cyristalValue)

@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - fireBallGun: {fileID: 3345624850659243017, guid: b11dc90cff92d7c449440d2bb0cd58b6, type: 3}
-  - thunder: {instanceID: 0}
+  - thunder: {fileID: 1543063237102930009, guid: 9d93eda1114e46b459dc38d4c351d476, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

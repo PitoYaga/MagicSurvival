@@ -41,7 +41,7 @@ namespace Skills
         
             if (_timer >= shootInterval)
             {
-                GameObject fireBallCopy = Instantiate(fireBallBullet, _barrelPos.transform.position, transform.rotation);
+                GameObject fireBallCopy = Instantiate(fireBallBullet, _barrelPos.transform.position, transform.parent.rotation);
                 _timer = 0;
             }
         }
@@ -58,5 +58,7 @@ namespace Skills
                 shootInterval = shootInterval + ((shootInterval * fireSpeedMultiply) / 100);
             }
         }
+        
+        
     }
 }

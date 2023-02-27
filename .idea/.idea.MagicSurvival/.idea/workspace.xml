@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Skills/LevelUpButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/DetectNearestEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/BasicShotGun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Skills/SkillUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
@@ -25,7 +26,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ValueBank.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBullet.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/XpHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/SkillHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallSkill.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBullet.cs" />
@@ -34,15 +34,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/DetectNearestEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/Constants.cs" />
       <option value="$PROJECT_DIR$/Assets/Prefabs/SkillBases/ThunderBase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallGun.cs" />
       <option value="$PROJECT_DIR$/Assets/Prefabs/Player/Thunder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/ValueBank.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/Thunder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillUpgrade.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/ThunderBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BasicEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/XpHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallGun.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/LevelUpButtons.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Game/Saves.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2L8Mzjl9tRGpvw3vrMVTRe57OPx" />
@@ -100,6 +103,10 @@
       <workItem from="1676204897628" duration="3484000" />
       <workItem from="1676309648601" duration="1358000" />
       <workItem from="1676379143111" duration="1564000" />
+      <workItem from="1676453610725" duration="3277000" />
+      <workItem from="1676542340829" duration="526000" />
+      <workItem from="1677401967505" duration="694000" />
+      <workItem from="1677508706282" duration="3790000" />
     </task>
     <servers />
   </component>
