@@ -1,15 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Saves : ScriptableObject
+namespace Game
 {
-    public static bool level1 = true;
-    public static bool level2;
-    public static bool level3;
+    public class Saves : ScriptableObject
+    {
+        public static bool level1 = true;
+        public static bool level2;
+        public static bool level3;
+        
+        public static int money;
+        
+        //kalıcı skiller
 
 
 
 
     
+    }
 }

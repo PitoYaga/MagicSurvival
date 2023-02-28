@@ -5,6 +5,7 @@ namespace Game
     public class ValueBank : MonoBehaviour
     {
         public static int CurrentXp = 0; //if enemy dies, this value will increase
+        public static bool levelUp;
     
         public static float bulletDamage = 5; //if enemy dies, this value will increase
     

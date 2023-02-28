@@ -31,7 +31,7 @@ namespace Player
             }
             else
             {
-                _rb.MovePosition(_rb.position + _movement * moveSpeed * Time.fixedDeltaTime);
+                _rb.MovePosition(_rb.position + _movement * (moveSpeed * Time.fixedDeltaTime));
             }
         }
     

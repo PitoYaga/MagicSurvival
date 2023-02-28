@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHeath: 15
-  speed: 2
+  speed: 0.5
   xpValue: 15
   suicideDistance: 0.6
 --- !u!61 &6466195322296023144

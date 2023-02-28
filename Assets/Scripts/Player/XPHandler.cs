@@ -43,13 +43,16 @@ namespace Player
                 maxXp = ((maxXp / 100) * xPMultiply) + maxXp;
                 xPSlider.maxValue = maxXp;
                 
-                //LevelUp();
+                LevelUp();
             }
         }
 
         void LevelUp()
         {
-            Instantiate(levelUpCanvas, transform.position, quaternion.identity);
+            ValueBank.levelUp = true;
+            //Instantiate(levelUpCanvas, transform.position, quaternion.identity);
+            levelUpCanvas.SetActive(true);
+            ValueBank.levelUp = false;
             Time.timeScale = 0;
         }
 

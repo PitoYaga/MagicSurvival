@@ -1,3 +1,4 @@
+using Game;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,11 +16,11 @@ namespace Skills
         //[SerializeField] private GameObject fireBallSkill;
         //[SerializeField] private GameObject thunderSkill;
 
-        [SerializeField] private GameObject[] skillButtons;
-        [SerializeField] private GameObject[] upgradeButtons;
+        [SerializeField] private Button[] skillButtons;
+        [SerializeField] private Button[] upgradeButtons;
 
-        private int possibility;
-        private int randomButton;
+        private int _possibility;
+        private int _randomButton;
         
         void Start()
         {
@@ -29,25 +30,28 @@ namespace Skills
         
         void Update()
         {
-            
+            if (ValueBank.levelUp)
+            {
+                RandomButton();
+            }
         }
 
         void RandomButton()
         {
             for (int i = 0; i < buttonCount; i++)
             {
-                possibility = Random.Range(0, 100);
-                if (possibility <= 20)
+                _possibility = Random.Range(0, 100);
+                if (_possibility <= skillButtonChange)
                 {
-                    //GameObject buttonCopy = Instantiate(skillButtons[1], buttonPos[i], Quaternion.identity);
+                    var buttonCopy = Instantiate(skillButtons[1], buttonPos[i].position, Quaternion.identity);
                 }
                 else
                 {
-                    //GameObject buttonCopy = Instantiate(upgradeButtons[1], buttonPos[i], Quaternion.identity);
+                    var buttonCopy = Instantiate(upgradeButtons[1], buttonPos[i].position, Quaternion.identity);
                 }
             }
         }
-
-       
+        
+        
     }
 }

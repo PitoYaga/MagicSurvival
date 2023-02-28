@@ -39,18 +39,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/Constants.cs" />
       <option value="$PROJECT_DIR$/Assets/Prefabs/SkillBases/ThunderBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Prefabs/Player/Thunder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Game/ValueBank.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/Thunder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillUpgrade.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/ThunderBase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BasicEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/XpHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallGun.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/LevelUpButtons.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BasicEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/Saves.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerJoystick.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Game/ValueBank.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/LevelUpButtons.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/XpHandler.cs" />
     </changedPaths>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -124,7 +124,7 @@
       <workItem from="1677585309091" duration="61000" />
       <workItem from="1677585425414" duration="1278000" />
       <workItem from="1677595115110" duration="2225000" />
-      <workItem from="1677618278076" duration="983000" />
+      <workItem from="1677618278076" duration="2870000" />
     </task>
     <servers />
   </component>
