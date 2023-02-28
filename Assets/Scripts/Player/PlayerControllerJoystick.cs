@@ -1,46 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControllerJoystick : MonoBehaviour
+namespace Player
 {
-    public FixedJoystick Joystick;
-    
-    Rigidbody2D _rb;
-    
-    
-    Vector2 movement;
-    public float MoveSpeed;
-    public static bool PointerDown = false;
-    void Start()
+    public class PlayerControllerJoystick : MonoBehaviour
     {
-        _rb = GetComponent<Rigidbody2D>();
-    }
+        public FixedJoystick joystick;
+    
+        Rigidbody2D _rb;
+    
+        Vector2 _movement;
+        public float moveSpeed;
+        public static bool PointerDown = false;
+    
+        void Start()
+        {
+            _rb = GetComponent<Rigidbody2D>();
+        }
 
     
-    void Update()
-    {
-        movement.x = Joystick.Horizontal;
-        movement.y = Joystick.Vertical;
-        
-        //Rotation 
-        float hAxis = movement.x;
-        float VAxis = movement.y;
-        float ZAxis = Mathf.Atan2(hAxis, VAxis) * Mathf.Rad2Deg;
-        transform.eulerAngles = new Vector3(0f, 0f, -ZAxis);
-
-    }
-    void FixedUpdate()
-    {
-        if (PointerDown)
+        void Update()
         {
-            _rb.velocity = Vector3.zero;
+            _movement.x = joystick.Horizontal;
+            _movement.y = joystick.Vertical;
         }
-        else
+        void FixedUpdate()
         {
-            _rb.MovePosition(_rb.position + movement * MoveSpeed * Time.fixedDeltaTime);
+            if (PointerDown)
+            {
+                _rb.velocity = Vector3.zero;
+            }
+            else
+            {
+                _rb.MovePosition(_rb.position + _movement * moveSpeed * Time.fixedDeltaTime);
+            }
         }
-        
-        
+    
+    
     }
 }

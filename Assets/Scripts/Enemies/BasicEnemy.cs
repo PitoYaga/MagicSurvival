@@ -47,6 +47,8 @@ namespace Enemies
                 //death anim
                 Destroy(gameObject); 
             }
+            
+            Debug.Log(enemyHeath);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -68,7 +70,6 @@ namespace Enemies
                 Debug.Log("thunder");
             }
             
-            Debug.Log(enemyHeath);
 
         }
     }
