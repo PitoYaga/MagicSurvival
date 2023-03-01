@@ -20,7 +20,7 @@ namespace Player
     
         void Start()
         {
-            levelUpCanvas.SetActive(false);
+            //levelUpCanvas.SetActive(false);
             xPSlider.maxValue = maxXp;
         }
 
@@ -50,8 +50,8 @@ namespace Player
         void LevelUp()
         {
             ValueBank.levelUp = true;
-            //Instantiate(levelUpCanvas, transform.position, quaternion.identity);
-            levelUpCanvas.SetActive(true);
+            Instantiate(levelUpCanvas, transform.position, quaternion.identity);
+            //levelUpCanvas.SetActive(true);
             ValueBank.levelUp = false;
             Time.timeScale = 0;
         }

@@ -7,6 +7,7 @@ namespace Skills
 {
     public class SkillHandler : MonoBehaviour
     {
+        [SerializeField] private Canvas levelUpCanvas;
         [SerializeField] private GameObject fireBallGun;
         [SerializeField] private GameObject thunder;
 
@@ -24,6 +25,8 @@ namespace Skills
             {
                 GameObject fireBallGunClone = Instantiate(fireBallGun, transform.position, quaternion.identity);
                 fireBallGunClone.transform.SetParent(_playerGun.transform);
+                Time.timeScale = 1;
+                Destroy(levelUpCanvas);
             }
         }
 
@@ -33,6 +36,8 @@ namespace Skills
             {
                 GameObject thunderClone = Instantiate(thunder, transform.position, quaternion.identity);
                 thunderClone.transform.SetParent(_playerGun.transform);
+                Time.timeScale = 1;
+                Destroy(levelUpCanvas);
             }
         }
         

@@ -153,7 +153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &360891876212253494
 RectTransform:
   m_ObjectHideFlags: 0
@@ -256,4 +256,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 360891876212253496}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5300306931143983012, guid: 3035ffb29cdff454dab5d0b978d491cc, type: 3}
+        m_TargetAssemblyTypeName: Skills.SkillUpgrade, Assembly-CSharp
+        m_MethodName: BasicShootUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

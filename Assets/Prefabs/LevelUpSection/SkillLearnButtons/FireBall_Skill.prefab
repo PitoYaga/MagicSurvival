@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8992921357730095129
 RectTransform:
   m_ObjectHideFlags: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5300306931143983013, guid: 3035ffb29cdff454dab5d0b978d491cc, type: 3}
         m_TargetAssemblyTypeName: Skills.SkillHandler, Assembly-CSharp
         m_MethodName: FireBallSkill
         m_Mode: 1

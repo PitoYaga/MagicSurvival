@@ -20,34 +20,41 @@ namespace Skills
         [SerializeField] private Button[] upgradeButtons;
 
         private int _possibility;
-        private int _randomButton;
+        private int _randomSkillButton;
+        private int _randomUpgradeButton;
         
         void Start()
         {
-            
+            RandomButton();
         }
 
         
         void Update()
         {
-            if (ValueBank.levelUp)
-            {
-                RandomButton();
-            }
+           
         }
 
         void RandomButton()
         {
             for (int i = 0; i < buttonCount; i++)
             {
+                int skill;
+                int upgrade;
                 _possibility = Random.Range(0, 100);
-                if (_possibility <= skillButtonChange)
+                
+                if (_possibility <= skillButtonChange - 1)
                 {
-                    var buttonCopy = Instantiate(skillButtons[1], buttonPos[i].position, Quaternion.identity);
+                    skill = Random.Range(0, skillButtons.Length);
+                    var buttonCopy = Instantiate(skillButtons[skill], buttonPos[i].position, Quaternion.identity);
+                   
+                    buttonCopy.transform.SetParent(buttonPos[i]);
                 }
                 else
                 {
-                    var buttonCopy = Instantiate(upgradeButtons[1], buttonPos[i].position, Quaternion.identity);
+                    upgrade = Random.Range(0, skillButtons.Length - 1);
+                    var buttonCopy = Instantiate(upgradeButtons[upgrade], buttonPos[i].position, Quaternion.identity);
+
+                    buttonCopy.transform.SetParent(buttonPos[i]);
                 }
             }
         }
