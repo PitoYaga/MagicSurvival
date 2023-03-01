@@ -13,6 +13,7 @@ TagManager:
   - PlayerGuns
   - Barrel
   - Thunder
+  - GoldCoin
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Player
 {
-    public class XpHandler : MonoBehaviour
+    public class XPHandler : MonoBehaviour
     {
         [SerializeField] float maxXp = 100;
         [SerializeField] float xPMultiply = 15;
@@ -24,7 +24,7 @@ namespace Player
             xPSlider.maxValue = maxXp;
         }
 
-    
+
         void Update()
         {
             ValueBank.CurrentXp = _currentXp;
