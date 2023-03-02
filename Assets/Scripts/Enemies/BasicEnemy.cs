@@ -45,6 +45,9 @@ namespace Enemies
             {
                 ValueBank.CurrentXp += xpValue;
                 //death anim
+                SaveSystem.KillCount++;
+                SaveSystem.SaveSystemSave();
+                Debug.Log("KillCount"+ SaveSystem.KillCount);
                 Destroy(gameObject); 
             }
             

@@ -18,7 +18,8 @@ public class Constants : MonoBehaviour
     
     public static string barrelTag = "Barrel";
     public static string playerGunTag = "PlayerGuns";
-    
-    
-    
+    public static string GoldCoinTag = "GoldCoin";
+
+
+
 }

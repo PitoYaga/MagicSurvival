@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4807259224963809488}
   - component: {fileID: 4807259224963809489}
   - component: {fileID: 153058356}
+  - component: {fileID: 968043423}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -173,6 +174,19 @@ MonoBehaviour:
   bigCyristal: 20
   xPSlider: {fileID: 0}
   levelUpCanvas: {fileID: 5300306931143983018, guid: 3035ffb29cdff454dab5d0b978d491cc, type: 3}
+--- !u!114 &968043423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807259224963809502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7feef1824094b47b14dfe2670136f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Goldcoin: 0
 --- !u!1 &4807259225611524556
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +264,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 2587631326346984291, guid: 7e7fd92b3b9cc7c4a83ab77de855b470, type: 3}
   shootInterval: 1
+  shootIntervalMultiply: 15
+  damageMultiply: 15
   shootOffset: 0.75
   shootRange: 2.5
 --- !u!1 &4807259226094179007
