@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Player
@@ -5,6 +6,8 @@ namespace Player
     public class PlayerBullet : MonoBehaviour
     {
         [SerializeField] private float speed = 50;
+        [SerializeField] private int pierCount = 1;
+        [SerializeField] private float speedMultiply = 15;
 
         private Rigidbody2D _rigidbody2D;
 
@@ -22,6 +25,20 @@ namespace Player
         void Update()
         {
         
+        }
+        
+        void BasicShootUpgrade()
+        {
+            
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            pierCount--;
+            if (pierCount <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -55,7 +55,7 @@ namespace Skills
                 _fireBallLevel = ValueBank.fireBallLevel;
                 _damage = _damage + ((_damage * damageMultiply) / 100);
                 ValueBank.FireBallDamage = _damage;
-                shootInterval = shootInterval + ((shootInterval * fireSpeedMultiply) / 100);
+                shootInterval = shootInterval - ((shootInterval * fireSpeedMultiply) / 100);
             }
         }
         

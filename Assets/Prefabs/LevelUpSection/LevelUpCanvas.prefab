@@ -331,6 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501babd65c007564897e1590cf8d10c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelUpCanvas: {fileID: 0}
 --- !u!114 &5300306931143983013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ec02778ba992d47a0087a0cc65c06e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelUpCanvas: {fileID: 5300306931143983015}
   fireBallGun: {fileID: 3345624850659243017, guid: b11dc90cff92d7c449440d2bb0cd58b6, type: 3}
   thunder: {fileID: 1543063237102930009, guid: 9d93eda1114e46b459dc38d4c351d476, type: 3}
 --- !u!114 &5300306931143983009

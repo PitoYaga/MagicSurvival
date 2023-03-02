@@ -55,7 +55,6 @@ namespace Enemies
         {
             if (other.gameObject.CompareTag(Constants.bulletTag))
             {
-                Destroy(other.gameObject);
                 GetDamage(ValueBank.bulletDamage);
                 Debug.Log("shoot");
             }

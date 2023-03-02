@@ -172,7 +172,7 @@ MonoBehaviour:
   midCyristal: 15
   bigCyristal: 20
   xPSlider: {fileID: 0}
-  levelUpCanvas: {fileID: 0}
+  levelUpCanvas: {fileID: 5300306931143983018, guid: 3035ffb29cdff454dab5d0b978d491cc, type: 3}
 --- !u!1 &4807259225611524556
 GameObject:
   m_ObjectHideFlags: 0

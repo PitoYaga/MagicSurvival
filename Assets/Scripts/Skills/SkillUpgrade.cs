@@ -5,7 +5,7 @@ namespace Skills
 {
     public class SkillUpgrade : MonoBehaviour
     {
-        [SerializeField] private Canvas levelUpCanvas;
+        [SerializeField] private GameObject levelUpCanvas;
         
         public void HealthUpgrade()
         {
@@ -22,6 +22,7 @@ namespace Skills
             ValueBank.basicShootLevel++;
             Time.timeScale = 1;
             Destroy(levelUpCanvas);
+            Debug.Log("upgrated");
         }
         
         public void FireBallUpgrade()
