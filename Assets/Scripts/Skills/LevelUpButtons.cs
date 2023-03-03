@@ -45,14 +45,14 @@ namespace Skills
                 if (_possibility <= skillButtonChange - 1)
                 {
                     skill = Random.Range(0, skillButtons.Length);
-                    var buttonCopy = Instantiate(skillButtons[skill], buttonPos[i].position, Quaternion.identity);
-                   
+                    Button buttonCopy = Instantiate(skillButtons[skill], buttonPos[i].position, Quaternion.identity);
+
                     buttonCopy.transform.SetParent(buttonPos[i]);
                 }
                 else
                 {
                     upgrade = Random.Range(0, skillButtons.Length - 1);
-                    var buttonCopy = Instantiate(upgradeButtons[upgrade], buttonPos[i].position, Quaternion.identity);
+                    Button buttonCopy = Instantiate(upgradeButtons[upgrade], buttonPos[i].position, Quaternion.identity);
 
                     buttonCopy.transform.SetParent(buttonPos[i]);
                 }

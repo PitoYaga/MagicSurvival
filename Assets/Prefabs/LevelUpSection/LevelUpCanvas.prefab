@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 501babd65c007564897e1590cf8d10c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelUpCanvas: {fileID: 0}
+  levelUpCanvas: {fileID: 5300306931143983018}
 --- !u!114 &5300306931143983013
 MonoBehaviour:
   m_ObjectHideFlags: 0
