@@ -21,8 +21,8 @@ namespace Skills
         {
             ValueBank.basicShootLevel++;
             Time.timeScale = 1;
-            Destroy(levelUpCanvas);
             Debug.Log("upgrated");
+            Destroy(levelUpCanvas);
         }
         
         public void FireBallUpgrade()

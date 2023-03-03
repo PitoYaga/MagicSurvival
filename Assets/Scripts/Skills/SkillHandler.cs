@@ -10,6 +10,7 @@ namespace Skills
         [SerializeField] private Canvas levelUpCanvas;
         [SerializeField] private GameObject fireBallGun;
         [SerializeField] private GameObject thunder;
+        [SerializeField] private GameObject shield;
 
         private GameObject _playerGun;
 
@@ -36,6 +37,17 @@ namespace Skills
             {
                 GameObject thunderClone = Instantiate(thunder, transform.position, quaternion.identity);
                 thunderClone.transform.SetParent(_playerGun.transform);
+                Time.timeScale = 1;
+                Destroy(levelUpCanvas);
+            }
+        }
+        
+        public void ShieldSkill()
+        {
+            if (ValueBank.thunderBool)
+            {
+                GameObject shieldClone = Instantiate(shield, transform.position, quaternion.identity);
+                shieldClone.transform.SetParent(_playerGun.transform);
                 Time.timeScale = 1;
                 Destroy(levelUpCanvas);
             }

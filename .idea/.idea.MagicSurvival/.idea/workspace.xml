@@ -44,14 +44,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControllerJoystick.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Game/ValueBank.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/XpHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/XPHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillUpgrade.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/FireBallGun.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BasicEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/BasicShotGun.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/LevelUpButtons.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillUpgrade.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BasicEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/ShieldBase.cs" />
     </changedPaths>
   </component>
@@ -133,6 +134,7 @@
       <workItem from="1677756347772" duration="7439000" />
       <workItem from="1677786937576" duration="3330000" />
       <workItem from="1677845416402" duration="4900000" />
+      <workItem from="1677877535266" duration="2895000" />
     </task>
     <servers />
   </component>

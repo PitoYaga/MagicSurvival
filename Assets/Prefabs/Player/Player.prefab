@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4807259224963809493}
   - component: {fileID: 4807259224963809490}
-  - component: {fileID: 4807259224963809491}
-  - component: {fileID: 4807259224963809495}
-  - component: {fileID: 4807259224963809488}
   - component: {fileID: 4807259224963809489}
+  - component: {fileID: 4807259224963809488}
+  - component: {fileID: 4807259224963809491}
+  - component: {fileID: 6824019332746718384}
+  - component: {fileID: 4807259224963809495}
   - component: {fileID: 153058356}
   - component: {fileID: 968043423}
   m_Layer: 0
@@ -91,33 +92,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4807259224963809491
-MonoBehaviour:
+--- !u!70 &4807259224963809489
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4807259224963809502}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b28139c4df7b604da282d268f5649ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  basicSpeed: 100
---- !u!114 &4807259224963809495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4807259224963809502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb12f36c75c8d948988c9876374c479, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joystick: {fileID: 0}
-  moveSpeed: 2
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
 --- !u!50 &4807259224963809488
 Rigidbody2D:
   serializedVersion: 4
@@ -139,22 +129,47 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!70 &4807259224963809489
-CapsuleCollider2D:
+--- !u!114 &4807259224963809491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807259224963809502}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b28139c4df7b604da282d268f5649ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicSpeed: 100
+--- !u!114 &6824019332746718384
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4807259224963809502}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764d1780b233401438b93e244da2d7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 100
+  healthMultiplyer: 20
+--- !u!114 &4807259224963809495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807259224963809502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb12f36c75c8d948988c9876374c479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
+  moveSpeed: 2
 --- !u!114 &153058356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7feef1824094b47b14dfe2670136f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Goldcoin: 0
 --- !u!1 &4807259225611524556
 GameObject:
   m_ObjectHideFlags: 0

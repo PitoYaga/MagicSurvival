@@ -1,4 +1,6 @@
 using System;
+using Enemies;
+using Player;
 using UnityEngine;
 
 namespace Skills
@@ -15,6 +17,7 @@ namespace Skills
         void Start()
         {
             _currentHealth = maxShieldHealth;
+            transform.SetParent(FindObjectOfType<PlayerMovement>().transform);
         }
 
        
@@ -23,15 +26,7 @@ namespace Skills
             ShieldRepair();
             ShieldCheck();
         }
-
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.CompareTag(Constants.enemyTag))
-            {
-                _currentHealth--;
-            }
-        }
-
+        
         void ShieldRepair()
         {
             if (_currentHealth < maxShieldHealth)
@@ -39,6 +34,7 @@ namespace Skills
                 _timer += Time.deltaTime;
                 if (_timer >= shieldCooldown)
                 {
+                    _timer = 0;
                     _currentHealth++;
                 }
             }
@@ -51,6 +47,19 @@ namespace Skills
                 hasShield = true;
             }
         }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag(Constants.enemyTag))
+            {
+                _currentHealth--;
+                other.GetComponent<BasicEnemy>().Attack();
+                Debug.Log(_currentHealth);
+            }
+        }
+
+       
+        
         
         
     }
